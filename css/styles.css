@@ -269,6 +269,12 @@ textarea {
 	transition: border-color var(--animation-duration) var(--animation-function);
 }
 
+.policy-checkbox {
+	width: 16px;
+	height: 16px;
+	margin-top: 16px;
+}
+
 .policy-checkbox-label {
 	font-weight: 400;
 	font-size: 12px;
