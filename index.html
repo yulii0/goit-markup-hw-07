@@ -4,15 +4,18 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Studio</title>
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/mobile.css" />
+	<link rel="stylesheet" href="./css/tablet.css">
+	<link rel="stylesheet" href="./css/desktop.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
 		rel="stylesheet" />
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-	<link rel="stylesheet" href="./css/styles.css" />
+	<title>Studio</title>
 </head>
 
 <body>
@@ -21,6 +24,9 @@
 		<div class="container main-nav">
 			<nav class="site-nav">
 				<a class="logo-header" href="./index.html">Web<span class="logo-header-decor">Studio</span></a>
+				<button class="menu-mob" type="button" data-menu-open><svg class="menu-mob-icon" width="32" height="22">
+						<use href="./images/sprites.svg#icon-paragraph-justify"></use>
+					</svg></button>
 				<ul class="site-nav-list list">
 					<li class="site-nav-item"><a href="./index.html" class="site-nav-item-link current">Studio</a></li>
 					<li class="site-nav-item">
@@ -41,8 +47,9 @@
 				</ul>
 			</address>
 		</div>
+
 	</header>
-	<!-- Hero -->
+	<!-- HERO -->
 	<main>
 		<section class="hero">
 			<div class="container">
@@ -50,8 +57,8 @@
 				<button data-modal-open class="button hero-button pointer" type="button"> Order Service </button>
 			</div>
 		</section>
-		<!-- Specifics -->
-		<section class="section">
+		<!-- SPECIFICS -->
+		<section class="section section-specifics-sm">
 			<div class="container">
 				<h2 class="visually-hidden">Specifics</h2>
 				<ul class="specifics-list list">
@@ -82,8 +89,8 @@
 				</ul>
 			</div>
 		</section>
-		<!-- What we are doing? -->
-		<section class="section no-padding">
+		<!-- WORK -->
+		<section class="section no-padding work">
 			<div class="container">
 				<h2 class="section-title centered">What are we doing</h2>
 				<ul class="services-list list">
@@ -99,8 +106,8 @@
 				</ul>
 			</div>
 		</section>
-		<!-- Team -->
-		<section class="section team-section-decor">
+		<!-- TEAM -->
+		<section class="section team-section team-section-decor">
 			<div class="container">
 				<h2 class="section-title centered">Our Team</h2>
 				<ul class="team-list list">
@@ -236,7 +243,7 @@
 				</ul>
 			</div>
 		</section>
-		<!-- Customers -->
+		<!-- CUSTOMERS -->
 		<section class="customers">
 			<div class="container customers-container">
 				<h2 class="section-title centered">Customers</h2>
@@ -269,55 +276,108 @@
 			</div>
 		</section>
 	</main>
-	<!-- Footer -->
+	<!-- FOOTER -->
 	<footer class="footer">
-		<div class="container footer-main">
-			<div class="footer-logo-block">
-				<a class="logo-footer" href="./index.html">Web<span class="logo-footer-decor">Studio</span></a>
-				<p class="footer-logo-block-text">
-					Increase the flow of customers and sales for your business with digital marketing &#38; growth solutions.
-				</p>
+		<div class="container container-m">
+			<div class="footer-main">
+				<div class="footer-logo-block">
+					<a class="logo-footer" href="./index.html">Web<span class="logo-footer-decor">Studio</span></a>
+					<p class="footer-logo-block-text">
+						Increase the flow of customers and sales for your business with digital marketing &#38; growth solutions.
+					</p>
+				</div>
+				<div class="social-links-block">
+					<p class="footer-text-social-media">Social media</p>
+					<ul class="footer-social-list list">
+						<li class="footer-social-item">
+							<a class="footer-social-link" href=""><svg class="footer-social-icon" width="24" height="24">
+									<use href="./images/sprites.svg#icon-instagram"></use>
+								</svg></a>
+						</li>
+						<li class="footer-social-item">
+							<a class="footer-social-link" href=""><svg class="footer-social-icon" width="24" height="24">
+									<use href="./images/sprites.svg#icon-twitter"></use>
+								</svg></a>
+						</li>
+						<li class="footer-social-item">
+							<a class="footer-social-link" href=""><svg class="footer-social-icon" width="24" height="24">
+									<use href="./images/sprites.svg#icon-facebook"></use>
+								</svg></a>
+						</li>
+						<li class="footer-social-item">
+							<a class="footer-social-link" href=""><svg class="footer-social-icon" width="24" height="24">
+									<use href="./images/sprites.svg#icon-linkedin"></use>
+								</svg></a>
+						</li>
+					</ul>
+				</div>
+				<div class="subscribe-block">
+					<form class="subscribe-block-form">
+						<p class="subscribe-block-text">Subscribe</p>
+						<div class="subscribe-field">
+							<input class="subscribe-block-input" type="email" name="subscribe-email" id="subscribe-email"
+								placeholder="E-mail" required>
+							<button type="submit" class="subscribe-block-button button hero-button">Subscribe<svg
+									class="subscribe-icon" width="24" height="20">
+									<use href="./images/sprites.svg#icon-frame"></use>
+								</svg></button>
+						</div>
+					</form>
+				</div>
 			</div>
-			<div class="social-links-block">
-				<p class="footer-text-social-media">Social media</p>
-				<ul class="footer-social-list list">
-					<li class="footer-social-item">
-						<a class="footer-social-link" href=""><svg class="footer-social-icon" width="24" height="24">
+		</div>
+	</footer>
+
+	<!-- MOBILE-MENU -->
+	<div class="mobile-menu" data-menu>
+		<div class="container-menu">
+			<button class="mobile-menu-close-btn" data-menu-close>
+				<svg class="mobile-menu-close-icon" width="8px" height="8px">
+					<use href="./images/sprites.svg#icon-close"></use>
+				</svg></button>
+
+			<ul class="mobile-menu-list list">
+				<li class="mobile-menu-item"><a class="mobile-menu-link link " href="./index.html">Studio</a></li>
+				<li class="mobile-menu-item"><a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a></li>
+				<li class="mobile-menu-item"><a class="mobile-menu-link link" href="#">Contacts</a></li>
+			</ul>
+			<div class="address-social-block">
+				<address>
+					<ul class="address-list list">
+						<li class="address-list-item"><a class="address-list-item-tel link" href="tel:+110001111111">+11 (000)
+								111-11-11</a></li>
+						<li class="address-list-item"><a class="address-list-item-email link"
+								href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+					</ul>
+				</address>
+
+				<ul class="social-list-mobile list">
+					<li class="social-list-mobile-item">
+						<a href="" class="social-list-mobile-item-link"><svg class="social-list-icon" width="24" height="24">
 								<use href="./images/sprites.svg#icon-instagram"></use>
 							</svg></a>
 					</li>
-					<li class="footer-social-item">
-						<a class="footer-social-link" href=""><svg class="footer-social-icon" width="24" height="24">
+					<li class="social-list-mobile-item">
+						<a href="" class="social-list-mobile-item-link"><svg class="social-list-icon" width="24" height="24">
 								<use href="./images/sprites.svg#icon-twitter"></use>
 							</svg></a>
 					</li>
-					<li class="footer-social-item">
-						<a class="footer-social-link" href=""><svg class="footer-social-icon" width="24" height="24">
+					<li class="social-list-mobile-item">
+						<a href="" class="social-list-mobile-item-link"><svg class="social-list-icon" width="24" height="24">
 								<use href="./images/sprites.svg#icon-facebook"></use>
 							</svg></a>
 					</li>
-					<li class="footer-social-item">
-						<a class="footer-social-link" href=""><svg class="footer-social-icon" width="24" height="24">
+					<li class="social-list-mobile-item">
+						<a href="" class="social-list-mobile-item-link"><svg class="social-list-icon" width="24" height="24">
 								<use href="./images/sprites.svg#icon-linkedin"></use>
 							</svg></a>
 					</li>
 				</ul>
 			</div>
-			<div class="subscribe-block">
-				<form class="subscribe-block-form">
-					<p class="subscribe-block-text">Subscribe</p>
-					<div class="subscribe-field">
-						<input class="subscribe-block-input" type="email" name="subscribe-email" id="subscribe-email"
-							placeholder="E-mail" required>
-						<button type="submit" class="subscribe-block-button button hero-button">Subscribe<svg class="subscribe-icon"
-								width="24" height="20">
-								<use href="./images/sprites.svg#icon-frame"></use>
-							</svg></button>
-					</div>
-				</form>
-			</div>
 		</div>
-	</footer>
+	</div>
+
+	<!-- MODAL-WINDOW -->
 	<div data-modal class="backdrop is-hidden">
 		<div class="modal">
 			<button data-modal-close class="modal-close-button" type="button"><svg class="modal-close-icon" width="8px"
@@ -369,6 +429,7 @@
 		</div>
 	</div>
 	<script src="./js/modal.js"></script>
+	<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

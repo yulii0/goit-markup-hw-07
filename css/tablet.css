@@ -1,0 +1,148 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 768px), (max-width: 1199px) {
+    .container-m {
+      max-width: 582px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+    }
+
+    .contacts-email,
+    .contacts-tel {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.04em;
+    }
+
+    .main-nav {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    .site-nav-item-link {
+      padding: 27px 0;
+    }
+  }
+
+  .site-nav-list {
+    display: flex;
+  }
+
+
+
+
+
+
+
+
+
+
+  .menu-mob {
+    display: none;
+  }
+
+  .site-nav {
+    padding: 0;
+    justify-content: unset;
+  }
+
+  .hero-title {
+    width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+  }
+
+  .section {
+    padding-bottom: 96px;
+  }
+
+  .specifics-list-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .specifics-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+
+  .specifics-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .specifics-list .title {
+    text-align: start;
+  }
+
+  .team-list {
+    justify-content: center;
+    row-gap: 64px;
+  }
+
+  .customer-link {
+    width: 168px;
+  }
+
+  .customers-list {
+    column-gap: 24px;
+  }
+
+
+  .subscribe-field {
+    flex-wrap: nowrap;
+  }
+
+  .subscribe-block {
+    width: auto;
+  }
+
+  .footer-main {
+    justify-content: start;
+    flex-direction: unset;
+  }
+
+  .logo-footer, .footer-text-social-media, .subscribe-block-text {
+    text-align: start;
+  }
+
+
+  .footer-logo-block-text {
+    width: 264px;
+  }
+
+  .subscribe-block {
+    margin-top: 72px;
+  }
+
+  .footer-logo-block {
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
+
+  .social-links-block {
+    margin-bottom: 0;
+  }
+
+  .subscribe-block-input {
+    width: 264px;
+    margin-bottom: 0;
+  }
+
+  .subscribe-block-button {
+    margin: 0 0 0 24px;
+  }
+}

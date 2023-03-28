@@ -1,0 +1,176 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+
+  .menu-mob {
+    display: none;
+  }
+
+
+
+  .site-nav {
+    width: unset;
+    justify-content: unset;
+    display: flex;
+  }
+
+  .contacts .item+.item {
+    margin-left: 40px;
+  }
+
+  .contacts-email,
+  .contacts-tel {
+    padding: 24px 0;
+  }
+
+
+
+  .hero {
+    padding-bottom: 188px;
+    padding-top: 188px;
+    max-width: 1440px;
+  }
+
+  .hero-title {
+    width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 48px;
+  }
+
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .specifics-list {
+    flex-wrap: nowrap;
+    column-gap: 24px;
+    row-gap: 0px;
+  }
+
+  .specifics-list-item {
+    width: 264px;
+  }
+
+  .specifics-list .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .specifics-list-text {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .site-nav-list {
+    display: flex;
+    margin-left: 76px;
+  }
+
+  .contacts {
+    display: flex;
+    font-style: normal;
+    list-style: none;
+  }
+
+  .specifics-list-item::before {
+    display: block;
+    content: "";
+    height: 112px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+  }
+
+  .icon-antena::before {
+    background-image: url(../images/antenna.svg);
+  }
+
+  .icom-astronaut::before {
+    background-image: url(../images/astronaut.svg);
+  }
+
+  .icon-clock::before {
+    background-image: url(../images/clock.svg);
+  }
+
+  .icon-diagram::before {
+    background-image: url(../images/diagram.svg);
+  }
+
+
+  .customers-container {
+    padding-top: 130px;
+    padding-bottom: 120px;
+  }
+
+  .customers-list {
+    column-gap: 24px;
+    flex-wrap: nowrap;
+    row-gap: 0;
+  }
+
+  .customer-link {
+    width: 168px;
+  }
+
+
+  .footer-main {
+    flex-wrap: nowrap;
+    flex-direction: unset;
+  }
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 76px;
+  }
+
+  .footer-logo-block {
+    margin-right: 120px;
+    margin-bottom: 0;
+  }
+
+  .footer-text-social-media {
+    text-align: start;
+  }
+
+  .logo-footer {
+    display: block;
+    text-align: start;
+  }
+
+  .social-links-block {
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
+
+  .subscribe-field {
+    flex-wrap: nowrap;
+  }
+
+  .subscribe-block-input {
+    min-width: 264px;
+    margin-bottom: 0px;
+  }
+
+  .subscribe-block-button {
+    margin-left: 24px;
+  }
+
+  .subscribe-block-text {
+    text-align: start;
+  }
+
+  .subscribe-block {
+    margin-top: 0;
+  }
+
+  .footer-logo-block-text {
+    width: 264px;
+  }
+}
