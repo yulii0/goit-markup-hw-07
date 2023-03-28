@@ -80,3 +80,10 @@
   }
 
 }
+
+/* MENU */
+@media screen and (max-width:410px) {
+  .social-list-mobile {
+    gap: 30px;
+  }
+}
