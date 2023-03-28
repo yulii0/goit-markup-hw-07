@@ -24,12 +24,19 @@
     padding: 24px 0;
   }
 
-
-
   .hero {
     padding-bottom: 188px;
     padding-top: 188px;
     max-width: 1440px;
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img16-desktop.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width:1200px),
+  screen and (min-resolution: 192dpi) and (min-width:1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .hero {
+      background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img16-desktop@2x.jpg);
+    }
   }
 
   .hero-title {
