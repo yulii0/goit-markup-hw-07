@@ -3,10 +3,19 @@
     max-width: 1158px;
   }
 
+
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   .menu-mob {
     display: none;
   }
 
+  .work {
+    display: block;
+  }
 
 
   .site-nav {
@@ -46,9 +55,10 @@
     margin-bottom: 48px;
   }
 
-  .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+
+
+  .no-padding {
+    padding-top: 0;
   }
 
   .specifics-list {
@@ -179,5 +189,10 @@
 
   .footer-logo-block-text {
     width: 264px;
+  }
+
+  .modal {
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }

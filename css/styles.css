@@ -210,6 +210,7 @@ address {
 /* MODAL */
 .backdrop {
 	position: fixed;
+	overflow: scroll;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -228,10 +229,11 @@ address {
 
 .modal {
 	position: absolute;
-	top: 50%;
+	top: 5%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%);
 	width: 408px;
+	max-width: 100%;
 	padding-left: 24px;
 	padding-right: 24px;
 	padding-top: 72px;
@@ -458,6 +460,7 @@ textarea {
 	font-weight: 700;
 	margin: 0 auto;
 	width: 320px;
+	max-width: 100%;
 	font-size: 36px;
 	line-height: 1.11;
 	margin-bottom: 72px;
@@ -472,10 +475,6 @@ textarea {
 
 .portfolio-section {
 	padding-top: 96px;
-}
-
-.no-padding {
-	padding-top: 0;
 }
 
 .team-section-decor {

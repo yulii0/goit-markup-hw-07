@@ -3,6 +3,10 @@
     max-width: 768px;
   }
 
+  .work {
+    display: none;
+  }
+
   @media screen and (min-width: 768px), (max-width: 1199px) {
     .container-m {
       max-width: 582px;
@@ -49,14 +53,14 @@
   }
 
   .hero {
-    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img16-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img16-desktop.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .hero {
-      background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img16-tablet@2x.jpg);
+      background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img16-desktop@2x.jpg);
     }
   }
 
@@ -116,6 +120,7 @@
   .footer-main {
     justify-content: start;
     flex-direction: unset;
+    align-items: flex-start;
   }
 
   .logo-footer, .footer-text-social-media, .subscribe-block-text {
