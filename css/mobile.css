@@ -3,6 +3,10 @@
     max-width: 428px;
   }
 
+  img {
+    max-width: 100%;
+  }
+
   .site-nav {
     width: 100%;
     justify-content: space-between;
@@ -10,6 +14,10 @@
 
   .site-nav-list, .contacts, .specifics-list-item::before {
     display: none;
+  }
+
+  .mobile-menu-item .current-mobile-menu {
+    color: var(--primary-pressed-state);
   }
 
   @media screen and (max-width:428px) {
@@ -98,11 +106,18 @@
     }
   }
 
+
+  /* PORTFOLIO */
+
 }
 
 /* MENU */
 @media screen and (max-width:410px) {
   .social-list-mobile {
     gap: 30px;
+  }
+
+  .address-list-item-tel {
+    font-size: 26px;
   }
 }

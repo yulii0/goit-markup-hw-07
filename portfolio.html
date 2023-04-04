@@ -13,6 +13,9 @@
 	<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
 	<link rel="stylesheet" href="./css/styles.css" />
+	<link rel="stylesheet" href="./css/mobile.css" />
+	<link rel="stylesheet" href="./css/tablet.css">
+	<link rel="stylesheet" href="./css/desktop.css">
 </head>
 
 <body>
@@ -21,6 +24,9 @@
 		<div class="container main-nav">
 			<nav class="site-nav">
 				<a class="logo-header" href="./index.html">Web<span class="logo-header-decor">Studio</span></a>
+				<button class="menu-mob" type="button" data-menu-open><svg class="menu-mob-icon" width="32" height="22">
+						<use href="./images/sprites.svg#icon-menu"></use>
+					</svg></button>
 				<ul class="site-nav-list list">
 					<li class="site-nav-item"><a href="./index.html" class="site-nav-item-link">Studio</a></li>
 					<li class="site-nav-item">
@@ -41,6 +47,7 @@
 				</ul>
 			</address>
 		</div>
+
 	</header>
 	<!-- Filter -->
 	<main>
@@ -69,7 +76,22 @@
 					<li class="project-list-item">
 						<a href="" class="project-list-item-link">
 							<div class="project-thumb">
-								<img src="./images/img7.jpg" alt="bank application marcup" width="360" height="300" />
+								<picture>
+									<source media="(min-width: 1200px)" type="image/webp"
+										srcset="./images/img7-des.webp x1, ./images/img7@2x-des.webp 2x">
+									<source media="(min-width: 1200px)" srcset="./images/img7-des.jpg x1, ./images/img7@2x-des.jpg 2x">
+
+									<source media="(min-width: 768px)" type="image/webp"
+										srcset="./images/img7-tab.webp x1, ./images/img7@2x-tab.webp 2x">
+									<source media="(min-width: 768px)" srcset="./images/img7-tab.jpg x1, ./images/img7@2x-tab.jpg 2x">
+
+									<source media="(max-width: 767px)" type="image/webp"
+										srcset="./images/img7-mob.webp x1, ./images/img7@2x-mob.webp 2x">
+									<source media="(max-width: 767px)" srcset="./images/img7-mob.jpg x1, ./images/img7@2x-mob.jpg 2x">
+
+									<img src="./images/img7-mob.jpg" alt="bank application marcup" />
+								</picture>
+								<!-- width="360" height="300" -->
 								<p class="primary-text project-thumb-text">14 Stylish and User-Friendly App Design Concepts · Task
 									Manager App · Calorie
 									Tracker App · Exotic Fruit Ecommerce App ·
@@ -84,7 +106,21 @@
 					<li class="project-list-item">
 						<a href="" class="project-list-item-link">
 							<div class="project-thumb">
-								<img src="./images/img8.jpg" alt="cashless payment" width="360" height="300" />
+								<picture>
+									<source media="(min-width: 1200px)" type="image/webp"
+										srcset="./images/img8-des.webp x1, ./images/img8@2x-des.webp 2x">
+									<source media="(min-width: 1200px)" srcset="./images/img8-des.jpg x1, ./images/img8@2x-des.jpg 2x">
+
+									<source media="(min-width: 768px)" type="image/webp"
+										srcset="./images/img8-tab.webp x1, ./images/img8@2x-tab.webp 2x">
+									<source media="(min-width: 768px)" srcset="./images/img8-tab.jpg x1, ./images/img8@2x-tab.jpg 2x">
+
+									<source media="(max-width: 767px)" type="image/webp"
+										srcset="./images/img8-mob.webp x1, ./images/img8@2x-mob.webp 2x">
+									<source media="(max-width: 767px)" srcset="./images/img8-mob.jpg x1, ./images/img8@2x-mob.jpg 2x">
+
+									<img src="./images/img8-mob.jpg" alt="cashless payment" />
+								</picture>
 								<p class="primary-text project-thumb-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
 									Rerum quisquam magni veritatis in labore distinctio dolorem! Officiis sint veniam quidem repellendus
 									accusantium, a porro pariatur ipsa ipsam in corporis quisquam fuga quia!</p>
@@ -98,7 +134,21 @@
 					<li class="project-list-item">
 						<a href="" class="project-list-item-link">
 							<div class="project-thumb">
-								<img src="./images/img9.jpg" alt="meditaion app design" width="360" height="300" />
+								<picture>
+									<source media="(min-width: 1200px)" type="image/webp"
+										srcset="./images/img9-des.webp x1, ./images/img9@2x-des.webp 2x">
+									<source media="(min-width: 1200px)" srcset="./images/img9-des.jpg x1, ./images/img9@2x-des.jpg 2x">
+
+									<source media="(min-width: 768px)" type="image/webp"
+										srcset="./images/img9-tab.webp x1, ./images/img9@2x-tab.webp 2x">
+									<source media="(min-width: 768px)" srcset="./images/img9-tab.jpg x1, ./images/img9@2x-tab.jpg 2x">
+
+									<source media="(max-width: 767px)" type="image/webp"
+										srcset="./images/img9-mob.webp x1, ./images/img9@2x-mob.webp 2x">
+									<source media="(max-width: 767px)" srcset="./images/img9-mob.jpg x1, ./images/img9@2x-mob.jpg 2x">
+
+									<img src="./images/img9-mob.jpg" alt="meditaion app design" />
+								</picture>
 								<p class="primary-text project-thumb-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 									Sunt, non ex.</p>
 							</div>
@@ -111,7 +161,21 @@
 					<li class="project-list-item">
 						<a href="" class="project-list-item-link">
 							<div class="project-thumb">
-								<img src="./images/img10.jpg" alt="photo of a taxi car" width="360" height="300" />
+								<picture>
+									<source media="(min-width: 1200px)" type="image/webp" type="image/webp"
+										srcset="./images/img10-des.webp x1, ./images/img10@2x-des.webp 2x">
+									<source media="(min-width: 1200px)" srcset="./images/img10-des.jpg x1, ./images/img10@2x-des.jpg 2x">
+
+									<source media="(min-width: 768px)" type="image/webp" type="image/webp"
+										srcset="./images/img10-tab.webp x1, ./images/img10@2x-tab.webp 2x">
+									<source media="(min-width: 768px)" srcset="./images/img10-tab.jpg x1, ./images/img10@2x-tab.jpg 2x">
+
+									<source media="(max-width: 767px)" type="image/webp" type="image/webp"
+										srcset="./images/img10-mob.webp x1, ./images/img10@2x-mob.webp 2x">
+									<source media="(max-width: 767px)" srcset="./images/img10-mob.jpg x1, ./images/img10@2x-mob.jpg 2x">
+
+									<img src="./images/img10-mob.jpg" alt="photo of a taxi car" />
+								</picture>
 								<p class="primary-text project-thumb-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
 									Beatae sapiente velit, iste atque exercitationem unde suscipit modi vero error adipisci, amet mollitia
 									nemo nobis?</p>
@@ -125,7 +189,21 @@
 					<li class="project-list-item">
 						<a href="" class="project-list-item-link">
 							<div class="project-thumb">
-								<img src="./images/img11.jpg" alt="screen illustration design" width="360" height="300" />
+								<picture>
+									<source media="(min-width: 1200px)" type="image/webp"
+										srcset="./images/img11-des.webp x1, ./images/img11@2x-des.webp 2x">
+									<source media="(min-width: 1200px)" srcset="./images/img11-des.jpg x1, ./images/img11@2x-des.jpg 2x">
+
+									<source media="(min-width: 768px)" type="image/webp"
+										srcset="./images/img11-tab.webp x1, ./images/img11@2x-tab.webp 2x">
+									<source media="(min-width: 768px)" srcset="./images/img11-tab.jpg x1, ./images/img11@2x-tab.jpg 2x">
+
+									<source media="(max-width: 767px)" type="image/webp"
+										srcset="./images/img11-mob.webp x1, ./images/img11@2x-mob.webp 2x">
+									<source media="(max-width: 767px)" srcset="./images/img11-mob.jpg x1, ./images/img11@2x-mob.jpg 2x">
+
+									<img src="./images/img11-mob.jpg" alt="screen illustration design" />
+								</picture>
 								<p class="primary-text project-thumb-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 									Natus perferendis odio facere id ipsum, quisquam nam consequuntur hic cumque voluptatem dicta eos
 									ipsam delectus facilis sunt reprehenderit illo neque voluptatibus, sapiente libero. Consectetur?</p>
@@ -139,7 +217,21 @@
 					<li class="project-list-item">
 						<a href="" class="project-list-item-link">
 							<div class="project-thumb">
-								<img src="./images/img12.jpg" alt="girl is holding a phone" width="360" height="300" />
+								<picture>
+									<source media="(min-width: 1200px)" type="image/webp" type="image/webp"
+										srcset="./images/img12-des.webp x1, ./images/img12@2x-des.webp 2x">
+									<source media="(min-width: 1200px)" srcset="./images/img12-des.jpg x1, ./images/img12@2x-des.jpg 2x">
+
+									<source media="(min-width: 768px)" type="image/webp" type="image/webp"
+										srcset="./images/img12-tab.webp x1, ./images/img12@2x-tab.webp 2x">
+									<source media="(min-width: 768px)" srcset="./images/img12-tab.jpg x1, ./images/img12@2x-tab.jpg 2x">
+
+									<source media="(max-width: 767px)" type="image/webp" type="image/webp"
+										srcset="./images/img12-mob.webp x1, ./images/img12@2x-mob.webp 2x">
+									<source media="(max-width: 767px)" srcset="./images/img12-mob.jpg x1, ./images/img12@2x-mob.jpg 2x">
+
+									<img src="./images/img12-mob.jpg" alt="girl is holding a phone" />
+								</picture>
 								<p class="primary-text project-thumb-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
 							</div>
 							<div class="project-list-item-content">
@@ -151,7 +243,21 @@
 					<li class="project-list-item">
 						<a href="" class="project-list-item-link">
 							<div class="project-thumb">
-								<img src="./images/img13.jpg" alt="designs of instagram stories" width="360" height="300" />
+								<picture>
+									<source media="(min-width: 1200px)" type="image/webp"
+										srcset="./images/img13-des.webp x1, ./images/img13@2x-des.webp 2x">
+									<source media="(min-width: 1200px)" srcset="./images/img13-des.jpg x1, ./images/img13@2x-des.jpg 2x">
+
+									<source media="(min-width: 768px)" type="image/webp"
+										srcset="./images/img13-tab.webp x1, ./images/img13@2x-tab.webp 2x">
+									<source media="(min-width: 768px)" srcset="./images/img13-tab.jpg x1, ./images/img13@2x-tab.jpg 2x">
+
+									<source media="(max-width: 767px)" type="image/webp"
+										srcset="./images/img13-mob.webp x1, ./images/img13@2x-mob.webp 2x">
+									<source media="(max-width: 767px)" srcset="./images/img13-mob.jpg x1, ./images/img13@2x-mob.jpg 2x">
+
+									<img src="./images/img13-mob.jpg" alt="designs of instagram stories" />
+								</picture>
 								<p class="primary-text project-thumb-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 									Rerum corrupti recusandae adipisci hic suscipit consequuntur!</p>
 							</div>
@@ -164,7 +270,21 @@
 					<li class="project-list-item">
 						<a href="" class="project-list-item-link">
 							<div class="project-thumb">
-								<img src="./images/img14.jpg" alt="woman with bag of organic food" width="360" height="300" />
+								<picture>
+									<source media="(min-width: 1200px)" type="image/webp"
+										srcset="./images/img14-des.webp x1, ./images/img14@2x-des.webp 2x">
+									<source media="(min-width: 1200px)" srcset="./images/img14-des.jpg x1, ./images/img14@2x-des.jpg 2x">
+
+									<source media="(min-width: 768px)" type="image/webp"
+										srcset="./images/img14-tab.webp x1, ./images/img14@2x-tab.webp 2x">
+									<source media="(min-width: 768px)" srcset="./images/img14-tab.jpg x1, ./images/img14@2x-tab.jpg 2x">
+
+									<source media="(max-width: 767px)" type="image/webp"
+										srcset="./images/img14-mob.webp x1, ./images/img14@2x-mob.webp 2x">
+									<source media="(max-width: 767px)" srcset="./images/img14-mob.jpg x1, ./images/img14@2x-mob.jpg 2x">
+
+									<img src="./images/img14-mob.jpg" alt="woman with bag of organic food" />
+								</picture>
 								<p class="primary-text project-thumb-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
 									quasi quas architecto adipisci quam in, natus, dignissimos asperiores ex quis non?</p>
 							</div>
@@ -177,7 +297,21 @@
 					<li class="project-list-item">
 						<a href="" class="project-list-item-link">
 							<div class="project-thumb">
-								<img src="./images/img15.jpg" alt="man is making fresh coffee" width="360" height="300" />
+								<picture>
+									<source media="(min-width: 1200px)" type="image/webp"
+										srcset="./images/img15-des.webp x1, ./images/img15@2x-des.webp 2x">
+									<source media="(min-width: 1200px)" srcset="./images/img15-des.jpg x1, ./images/img15@2x-des.jpg 2x">
+
+									<source media="(min-width: 768px)" type="image/webp"
+										srcset="./images/img15-tab.webp x1, ./images/img15@2x-tab.webp 2x">
+									<source media="(min-width: 768px)" srcset="./images/img15-tab.jpg x1, ./images/img15@2x-tab.jpg 2x">
+
+									<source media="(max-width: 767px)" type="image/webp"
+										srcset="./images/img15-mob.webp x1, ./images/img15@2x-mob.webp 2x">
+									<source media="(max-width: 767px)" srcset="./images/img15-mob.jpg x1, ./images/img15@2x-mob.jpg 2x">
+
+									<img src="./images/img15-mob.jpg" alt="man is making fresh coffee" />
+								</picture>
 								<p class="primary-text project-thumb-text">Lorem ipsum dolor sit.</p>
 							</div>
 							<div class="project-list-item-content">
@@ -190,56 +324,108 @@
 			</div>
 		</section>
 	</main>
-	<!-- footer -->
+	<!-- FOOTER -->
 	<footer class="footer">
-		<div class="container footer-main">
-			<div class="footer-logo-block">
-				<a class="logo-footer" href="./index.html">Web<span class="logo-footer-decor">Studio</span></a>
-				<p class="footer-logo-block-text">
-					Increase the flow of customers and sales for your business with digital marketing &#38; growth solutions.
-				</p>
+		<div class="container container-m">
+			<div class="footer-main">
+				<div class="footer-logo-block">
+					<a class="logo-footer" href="./index.html">Web<span class="logo-footer-decor">Studio</span></a>
+					<p class="footer-logo-block-text">
+						Increase the flow of customers and sales for your business with digital marketing &#38; growth solutions.
+					</p>
+				</div>
+				<div class="social-links-block">
+					<p class="footer-text-social-media">Social media</p>
+					<ul class="footer-social-list list">
+						<li class="footer-social-item">
+							<a class="footer-social-link" href=""><svg class="footer-social-icon" width="24" height="24">
+									<use href="./images/sprites.svg#icon-instagram"></use>
+								</svg></a>
+						</li>
+						<li class="footer-social-item">
+							<a class="footer-social-link" href=""><svg class="footer-social-icon" width="24" height="24">
+									<use href="./images/sprites.svg#icon-twitter"></use>
+								</svg></a>
+						</li>
+						<li class="footer-social-item">
+							<a class="footer-social-link" href=""><svg class="footer-social-icon" width="24" height="24">
+									<use href="./images/sprites.svg#icon-facebook"></use>
+								</svg></a>
+						</li>
+						<li class="footer-social-item">
+							<a class="footer-social-link" href=""><svg class="footer-social-icon" width="24" height="24">
+									<use href="./images/sprites.svg#icon-linkedin"></use>
+								</svg></a>
+						</li>
+					</ul>
+				</div>
+				<div class="subscribe-block">
+					<form class="subscribe-block-form">
+						<p class="subscribe-block-text">Subscribe</p>
+						<div class="subscribe-field">
+							<input class="subscribe-block-input" type="email" name="subscribe-email" id="subscribe-email"
+								placeholder="E-mail" required>
+							<button type="submit" class="subscribe-block-button button hero-button">Subscribe<svg
+									class="subscribe-icon" width="24" height="20">
+									<use href="./images/sprites.svg#icon-frame"></use>
+								</svg></button>
+						</div>
+					</form>
+				</div>
 			</div>
-			<div class="social-links-block">
-				<p class="footer-text-social-media">Social media</p>
-				<ul class="footer-social-list list">
-					<li class="footer-social-item">
-						<a class="footer-social-link" href=""><svg class="footer-social-icon" width="24" height="24">
+		</div>
+	</footer>
+
+	<!-- MOBILE-MENU -->
+	<div class="mobile-menu" data-menu>
+		<div class="container-menu">
+			<button class="mobile-menu-close-btn" data-menu-close>
+				<svg class="mobile-menu-close-icon" width="8px" height="8px">
+					<use href="./images/sprites.svg#icon-close"></use>
+				</svg></button>
+
+			<ul class="mobile-menu-list list">
+				<li class="mobile-menu-item"><a class="mobile-menu-link link" href="./index.html">Studio</a></li>
+				<li class="mobile-menu-item"><a class="mobile-menu-link link current-mobile-menu"
+						href="./portfolio.html">Portfolio</a></li>
+				<li class="mobile-menu-item"><a class="mobile-menu-link link" href="#">Contacts</a></li>
+			</ul>
+			<div class="address-social-block">
+				<address>
+					<ul class="address-list list">
+						<li class="address-list-item"><a class="address-list-item-tel link" href="tel:+110001111111">+11 (000)
+								111-11-11</a></li>
+						<li class="address-list-item"><a class="address-list-item-email link"
+								href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+					</ul>
+				</address>
+
+				<ul class="social-list-mobile list">
+					<li class="social-list-mobile-item">
+						<a href="" class="social-list-mobile-item-link"><svg class="social-list-icon" width="24" height="24">
 								<use href="./images/sprites.svg#icon-instagram"></use>
 							</svg></a>
 					</li>
-					<li class="footer-social-item">
-						<a class="footer-social-link" href=""><svg class="footer-social-icon" width="24" height="24">
+					<li class="social-list-mobile-item">
+						<a href="" class="social-list-mobile-item-link"><svg class="social-list-icon" width="24" height="24">
 								<use href="./images/sprites.svg#icon-twitter"></use>
 							</svg></a>
 					</li>
-					<li class="footer-social-item">
-						<a class="footer-social-link" href=""><svg class="footer-social-icon" width="24" height="24">
+					<li class="social-list-mobile-item">
+						<a href="" class="social-list-mobile-item-link"><svg class="social-list-icon" width="24" height="24">
 								<use href="./images/sprites.svg#icon-facebook"></use>
 							</svg></a>
 					</li>
-					<li class="footer-social-item">
-						<a class="footer-social-link" href=""><svg class="footer-social-icon" width="24" height="24">
+					<li class="social-list-mobile-item">
+						<a href="" class="social-list-mobile-item-link"><svg class="social-list-icon" width="24" height="24">
 								<use href="./images/sprites.svg#icon-linkedin"></use>
 							</svg></a>
 					</li>
 				</ul>
 			</div>
-			<div class="subscribe-block">
-				<form class="subscribe-block-form">
-					<p class="subscribe-block-text">Subscribe</p>
-					<div class="subscribe-field">
-						<input class="subscribe-block-input" type="email" name="subscribe-email" id="subscribe-email"
-							placeholder="E-mail" required>
-						<button type="submit" class="subscribe-block-button button hero-button">Subscribe<svg class="subscribe-icon"
-								width="24" height="20">
-								<use href="./images/sprites.svg#icon-frame"></use>
-							</svg></button>
-					</div>
-				</form>
-			</div>
 		</div>
-	</footer>
-	<script src="./js/modal.js"></script>
+	</div>
+	<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

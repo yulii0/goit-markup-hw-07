@@ -195,4 +195,33 @@
     top: 50%;
     transform: translate(-50%, -50%);
   }
+
+  /* PORTFOLIO */
+
+  .filter-button-list {
+    justify-content: center;
+    margin-bottom: 72px;
+  }
+
+  .filter-button-item {
+    margin-left: 24px;
+  }
+
+  .filter-button-item:first-child {
+    margin-left: 0;
+  }
+
+
+  .project-list-item {
+    flex-basis: calc(100% / 3 - 48px);
+  }
+
+  .portfolio-section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+
+
+
 }

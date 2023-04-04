@@ -75,10 +75,6 @@
     padding-bottom: 96px;
   }
 
-  .specifics-list-item:not(:last-child) {
-    margin-bottom: 0;
-  }
-
   .specifics-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -153,4 +149,25 @@
   .subscribe-block-button {
     margin: 0 0 0 24px;
   }
+
+  /* PORTFOLIO */
+
+  .filter-button-list {
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+
+  .portfolio-section {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .project-list-item {
+    flex-basis: calc(100% / 2 - 24px);
+  }
+
+
+
+
+
 }
